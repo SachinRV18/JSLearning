@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>document.write Overwrite Example</title>
+</head>
+
+<body>
+    <h1>This is the original page</h1>
+    <p>You should see this text first.</p>
+
+    <button onclick="writeAfterLoad()">Click Me</button>
+
+    <script>
+        function writeAfterLoad() {
+            document.write("<h2>The whole page is replaced!</h2>");
+            document.write("<p>Everything you saw before is gone.</p>");
+        }
+    </script>
+
+    <!-- alert function -->
+    <script>
+        window.alert("Hello World")
+    </script>
+</body>
+
+</html>
